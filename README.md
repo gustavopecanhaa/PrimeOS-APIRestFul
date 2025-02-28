@@ -20,15 +20,16 @@
 
 <br>
 
-### 📌 Visão Geral
+<h2>📌 Visão Geral</h2>
 
 **PrimeOS** é uma API RESTful desenvolvida como uma solução empresarial que oferece funcionalidades robustas para o gerenciamento de usuários, clientes e serviços, além de implementar recursos de segurança avançados, como autenticação JWT e criptografia de senhas, garantindo um ambiente confiável para o controle e monitoramento de ordens de serviço em tempo real.
 
 🔎 Quer saber mais sobre os **detalhes do projeto, endPoints e data base**?  
 Acesse o documento completo [aqui!](https://economic-jaborosa-ec9.notion.site/API-RESTful-PRIME-OS-1a8268a7953a80249eb9d47cbac28916?pvs=4)
 
+<br>
 
-### ✅ Funcionalidades Principais
+<h2>✅ Principais Funcionalidades</h2>
 
 #### 👥 Gestão de Funcionários
 - Cadastro de funcionários com diferentes níveis de acesso
@@ -160,3 +161,5 @@ Distribuído sob a licença MIT. Veja [LICENSE](./LICENSE) para mais informaçõ
 **Fale com Gustavo Peçanha:** 
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:gustavopecanhaa@outlook.com)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavopecanhaa/)
+
+Feito com muito carinho =D!
