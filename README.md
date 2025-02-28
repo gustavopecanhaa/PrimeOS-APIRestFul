@@ -9,7 +9,7 @@
   <a href="https://java.com">
     <img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white" alt="Java"></a>
   <a href="https://spring.io/projects/spring-boot">
-    <img src="https://img.shields.io/badge/Spring_Boot-3.1.5-brightgreen?logo=spring-boot" alt="Spring Boot"></a>
+    <img src="https://img.shields.io/badge/Spring_Boot-3.4.3-brightgreen?logo=spring-boot" alt="Spring Boot"></a>
   <a href="https://www.mysql.com/">
     <img src="https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white" alt="MySQL"></a>
   <a href="./LICENSE">
@@ -20,18 +20,15 @@
 
 ### 📌 Visão Geral
 
-O **PrimeOS** é uma API para gestão integrada de serviços empresariais, oferece ferramentas poderosas para:
+PrimeOS é uma API RESTful desenvolvida para facilitar a gestão integrada de serviços empresariais. O projeto oferece funcionalidades robustas para o gerenciamento de usuários, clientes e serviços, além de implementar recursos de segurança avançados, como autenticação JWT e criptografia de senhas, garantindo um ambiente confiável para o controle e monitoramento de ordens de serviço em tempo real.
 
-- ✅ Gerenciamento de equipe e clientes  
-- ✅ Controle detalhado de serviços prestados  
-- ✅ Autenticação segura e hierarquia de acesso  
-- ✅ Consultas e acompanhamento em tempo real  
+Para saber mais sobre o projeto e a documentação acesse 
 
 ---
 
-### ✨ Funcionalidades Principais
+### ✅ Funcionalidades Principais
 
-#### 👥 Gestão de Usuários
+#### 👥 Gestão de Funcionários
 - Cadastro de funcionários com diferentes níveis de acesso
 - CRUD completo para gestão de colaboradores
 - Senhas criptografadas com BCrypt
@@ -45,11 +42,6 @@ O **PrimeOS** é uma API para gestão integrada de serviços empresariais, ofere
 - Cadastro de serviços com detalhamento técnico
 - Associação automática a clientes e técnicos
 - Cálculo automático de valores e prazos
-
-#### 🔒 Segurança
-- Autenticação JWT
-- Controle de acesso baseado em roles
-- Proteção contra ataques comuns (SQL Injection, XSS)
 
 ---
 
@@ -66,6 +58,51 @@ O **PrimeOS** é uma API para gestão integrada de serviços empresariais, ofere
 
 ---
 
+## 🌐 Arquitetura do Sistema
+
+```mermaid
+graph TD
+    A[Usuário] -->|HTTP Requests| B[Security Filter]
+    B -->|Request Autorizado| C[Controller]
+    C -->|Chama| D[Service Layer]
+    D -->|Valida Regras| E[DTOs/Validação]
+    D -->|Acessa Dados| F[Repository]
+    F -->|ORM| G[(MySQL)]
+    D -->|Exception Handling| H[Global Exception Handler]
+    C -->|Resposta| I[JSON Response]
+    B -->|Request Não Autorizado| J[403 Forbidden]
+    
+    style A fill:#4CAF50,stroke:#388E3C
+    style B fill:#F44336,stroke:#D32F2F
+    style C fill:#2196F3,stroke:#1976D2
+    style D fill:#FFC107,stroke:#FFA000
+    style F fill:#9C27B0,stroke:#7B1FA2
+    style G fill:#009688,stroke:#00796B
+```
+
+## 📚 Documentação da API
+
+Explore todos os endpoints interativamente através do Swagger UI:  
+`http://localhost:8080/swagger-ui.html`
+
+**Exemplo de Requisição:**
+```http
+POST /auth/login
+Content-Type: application/json
+
+{
+  "login": "admin@primeos.com",
+  "senha": "senhaSegura123"
+}
+```
+
+**Resposta de Sucesso:**
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+}
+```
+
 ## 📦 Instalação Local
 
 ### Pré-requisitos
@@ -77,8 +114,8 @@ O **PrimeOS** é uma API para gestão integrada de serviços empresariais, ofere
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/primeOS.git
-   cd primeOS
+   git clone https://github.com/gustavopecanhaa/PrimeOS-APIRestFul.git
+   cd PrimeOS-APIRestFul
    ```
 
 2. **Configure o banco de dados**
@@ -105,53 +142,6 @@ Acesse a API:
 
 ---
 
-## 🌐 Arquitetura do Sistema
-
-```mermaid
-graph TD
-    A[Cliente] -->|HTTP Requests| B[Security Filter]
-    B -->|Request Autorizado| C[Controller]
-    C -->|Chama| D[Service Layer]
-    D -->|Valida Regras| E[DTOs/Validação]
-    D -->|Acessa Dados| F[Repository]
-    F -->|ORM| G[(MySQL)]
-    D -->|Exception Handling| H[Global Exception Handler]
-    C -->|Resposta| I[JSON Response]
-    B -->|Request Não Autorizado| J[403 Forbidden]
-    
-    style A fill:#4CAF50,stroke:#388E3C
-    style B fill:#F44336,stroke:#D32F2F
-    style C fill:#2196F3,stroke:#1976D2
-    style D fill:#FFC107,stroke:#FFA000
-    style F fill:#9C27B0,stroke:#7B1FA2
-    style G fill:#009688,stroke:#00796B
-```
-
----
-
-## 📚 Documentação da API
-
-Explore todos os endpoints interativamente através do Swagger UI:  
-`http://localhost:8080/swagger-ui.html`
-
-**Exemplo de Requisição:**
-```http
-POST /api/v1/auth/login
-Content-Type: application/json
-
-{
-  "login": "admin@primeos.com",
-  "senha": "senhaSegura123"
-}
-```
-
-**Resposta de Sucesso:**
-```json
-{
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "expiresIn": 3600
-}
-```
 
 ---
 
