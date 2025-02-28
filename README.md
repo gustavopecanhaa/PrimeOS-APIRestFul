@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">PrimeOS 🚀</h3>
-<h3 align="center">A API RESTFul para ordem de serviço!</h3>
+<h3 align="center">API RESTFul para ordem de serviço!</h3>
 <h5 align="center">(Expansões futuramente!)</h5>
 <p align="center">
   <a href="https://java.com">
