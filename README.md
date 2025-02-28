@@ -2,9 +2,9 @@
   <img src="https://github.com/user-attachments/assets/ba81d7b3-feb6-4c83-9d01-3fb44f170dc1" alt="Logo-PrimeOS">
 </p>
 
-<h1 align="center">PrimeOS 🚀</h1>
+<h3 align="center">PrimeOS 🚀</h3>
 <h3 align="center">A API RESTFul para ordem de serviço!</h3>
-
+<h5 align="center">(Novas expansões futuramente!)</h5>
 <p align="center">
   <a href="https://java.com">
     <img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white" alt="Java"></a>
@@ -18,13 +18,15 @@
 
 ---
 
+<br>
+
 ### 📌 Visão Geral
 
-PrimeOS é uma API RESTful desenvolvida para facilitar a gestão integrada de serviços empresariais. O projeto oferece funcionalidades robustas para o gerenciamento de usuários, clientes e serviços, além de implementar recursos de segurança avançados, como autenticação JWT e criptografia de senhas, garantindo um ambiente confiável para o controle e monitoramento de ordens de serviço em tempo real.
+**PrimeOS** é uma API RESTful desenvolvida como uma solução empresarial que oferece funcionalidades robustas para o gerenciamento de usuários, clientes e serviços, além de implementar recursos de segurança avançados, como autenticação JWT e criptografia de senhas, garantindo um ambiente confiável para o controle e monitoramento de ordens de serviço em tempo real.
 
-Para saber mais sobre o projeto e a documentação acesse 
+🔎 Quer saber mais sobre os **detalhes do projeto, endPoints e data base**?  
+Acesse o documento completo [aqui!](https://economic-jaborosa-ec9.notion.site/API-RESTful-PRIME-OS-1a8268a7953a80249eb9d47cbac28916?pvs=4)
 
----
 
 ### ✅ Funcionalidades Principais
 
@@ -36,29 +38,33 @@ Para saber mais sobre o projeto e a documentação acesse
 #### 🏢 Gestão de Clientes
 - Registro completo de informações de clientes
 - Histórico de serviços associados
-- Busca avançada por múltiplos critérios
+- Busca avançada por diferentes critérios
 
 #### 🔧 Gestão de Serviços
 - Cadastro de serviços com detalhamento técnico
-- Associação automática a clientes e técnicos
-- Cálculo automático de valores e prazos
+- Associação a clientes e técnicos
+- Consulta de serviços existentes
+ 
+  <br>
 
----
+<h2 align="center">🛠️ Tecnologias Utilizadas 🛠️</h2>
 
-## 🛠️ Tecnologias Utilizadas
+<br>
 
-- **Java 17 com Spring Boot 3** 
-- **Spring Security** 
-- **Spring Data JPA** 
-- **Swagger/OpenAPI 3** 
-- **Hibernate Validator** 
-- **Maven** 
-- **MySQL 8** 
-- **Postman** 
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-%23ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3-%236DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Spring%20Security-%236DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Security">
+  <img src="https://img.shields.io/badge/Spring%20Data%20JPA-%236DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data JPA">
+  <img src="https://img.shields.io/badge/Swagger%20OpenAPI-3-%2385EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger">
+  <img src="https://img.shields.io/badge/Hibernate%20Validator-%23007ACC?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate Validator">
+  <img src="https://img.shields.io/badge/Maven-%23C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" alt="Maven">
+  <img src="https://img.shields.io/badge/MySQL-8-%234479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+</p>
+<br>
 
----
 
-## 🌐 Arquitetura do Sistema
+<h2 align="center">🌐 Arquitetura do Sistema 🌐</h2>
 
 ```mermaid
 graph TD
@@ -79,6 +85,7 @@ graph TD
     style F fill:#9C27B0,stroke:#7B1FA2
     style G fill:#009688,stroke:#00796B
 ```
+<br>
 
 ## 📚 Documentação da API
 
@@ -91,8 +98,8 @@ POST /auth/login
 Content-Type: application/json
 
 {
-  "login": "admin@primeos.com",
-  "senha": "senhaSegura123"
+  "login": "admim",
+  "senha": "admin"
 }
 ```
 
@@ -102,8 +109,9 @@ Content-Type: application/json
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
 }
 ```
+<br>
 
-## 📦 Instalação Local
+## 📦 Faça a Instalação Local
 
 ### Pré-requisitos
 - Java 17 JDK  
@@ -138,54 +146,17 @@ Content-Type: application/json
 
 Acesse a API:
 - **Swagger UI:** `http://localhost:8080/swagger-ui.html`
-- **Endpoint base:** `http://localhost:8080/api/v1`
+- **Endpoint base:** `http://localhost:8080/auth/login`
 
----
-
-
----
-
-## 🤝 Como Contribuir
-
-1. Faça um **Fork** do projeto
-2. Crie sua **Feature Branch**
-   ```bash
-   git checkout -b feature/nova-funcionalidade
-   ```
-3. **Commit** suas mudanças
-   ```bash
-   git commit -m 'feat: Adiciona nova funcionalidade incrível'
-   ```
-4. **Push** para a branch
-   ```bash
-   git push origin feature/nova-funcionalidade
-   ```
-5. Abra um **Pull Request**
-
-Siga nosso [Guia de Contribuição](./CONTRIBUTING.md) para melhores práticas.
-
----
+<br>
 
 ## 📄 Licença
 
 Distribuído sob a licença MIT. Veja [LICENSE](./LICENSE) para mais informações.
 
----
+<br>
 
 ## ✉️ Contato
+**Fale com Gustavo Peçanha:** 
 
-**Equipe PrimeOS**  
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:contato@primeos.com)  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/company/primeos)
-
-**Desenvolvedor Principal**  
-[Seu Nome] - [@seu_usuario](https://github.com/seu-usuario)
-```
-
-### O que foi ajustado:
-
-- **Centralização e Espaçamento:** Foi garantido que todos os elementos fiquem centralizados e com espaçamento adequado para uma melhor leitura.
-- **Ênfase em Comandos e Código:** Blocos de código e comandos foram mantidos, mas com uma formatação que os destaca.
-- **Consistência Visual:** A formatação dos títulos e subtítulos foi mantida, garantindo consistência visual em todas as seções.
-
-Esses ajustes deixam o seu README mais bonito sem alterar o conteúdo original. Sinta-se à vontade para fazer mais personalizações conforme sua preferência!
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:gustavopecanhaa@outlook.com)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gustavopecanhaa/)
