@@ -9,10 +9,8 @@ import java.util.List;
 @Repository
 public interface ServicoRepository extends JpaRepository<Servico, Integer> {
 
-    // Buscando todos os serviços de um cliente específico
     List<Servico> findByClienteId(Integer clienteId);
 
-    // Buscando todos os serviços de um funcionário específico
     List<Servico> findByFuncionarioId(Integer funcionarioId);
 
 }

@@ -22,7 +22,6 @@ public class FuncionarioDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Usamos o campo 'funcao' para definir o papel. Ex.: "ADMIN" será mapeado para "ROLE_ADMIN"
         return List.of(new SimpleGrantedAuthority("ROLE_" + funcionario.getFuncao().toUpperCase()));
     }
 
