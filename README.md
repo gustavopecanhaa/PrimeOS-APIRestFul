@@ -10,10 +10,16 @@
     <img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white" alt="Java"></a>
   <a href="https://spring.io/projects/spring-boot">
     <img src="https://img.shields.io/badge/Spring_Boot-3.4.3-brightgreen?logo=spring-boot" alt="Spring Boot"></a>
+  <a href="https://spring.io/projects/spring-security">
+    <img src="https://img.shields.io/badge/Spring_Security-6.x-brightgreen?logo=spring-security&logoColor=white" alt="Spring Security"></a>
+  <a href="https://spring.io/projects/spring-data-jpa">
+    <img src="https://img.shields.io/badge/Spring_Data_JPA-3.x-brightgreen?logo=spring&logoColor=white" alt="Spring Data JPA"></a>
+  <a href="https://swagger.io/">
+    <img src="https://img.shields.io/badge/Swagger_OpenAPI-2.8.5-blue?logo=swagger" alt="Swagger OpenAPI"></a>
+  <a href="https://maven.apache.org/">
+    <img src="https://img.shields.io/badge/Maven-3.x-red?logo=apache-maven" alt="Maven"></a>
   <a href="https://www.mysql.com/">
-    <img src="https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white" alt="MySQL"></a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/Licença-MIT-yellow.svg" alt="Licença MIT"></a>
+    <img src="https://img.shields.io/badge/MySQL-8-blue?logo=mysql&logoColor=white" alt="MySQL"></a>
 </p>
 
 ---
